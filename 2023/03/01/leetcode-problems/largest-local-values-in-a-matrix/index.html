@@ -17,21 +17,22 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>Golang学习 | Hexo</title>
-  <meta name="description" content="练习">
+  <title>largest-local-values-in-a-matrix | Hexo</title>
+  <meta name="description" content="给你一个大小为n x n的整数矩阵 grid。 生成一个大小为(n - 2) x (n - 2)的整数矩阵maxLocal，并满足：  maxLocal[i][j]等于grid中以i + 1行和j + 1列为中心的3 x 3矩阵中的最大值。  换句话说，我们希望找出grid中每个3 x 3矩阵中的最大值。 返回生成的矩阵。参考：https:&#x2F;&#x2F;leetcode.cn&#x2F;problems&#x2F;larges">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Golang学习">
-<meta property="og:url" content="http://example.com/2023/02/16/Golang%E5%AD%A6%E4%B9%A0/index.html">
+<meta property="og:title" content="largest-local-values-in-a-matrix">
+<meta property="og:url" content="https://showmercy7.github.io/2023/03/01/leetcode-problems/largest-local-values-in-a-matrix/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="练习">
+<meta property="og:description" content="给你一个大小为n x n的整数矩阵 grid。 生成一个大小为(n - 2) x (n - 2)的整数矩阵maxLocal，并满足：  maxLocal[i][j]等于grid中以i + 1行和j + 1列为中心的3 x 3矩阵中的最大值。  换句话说，我们希望找出grid中每个3 x 3矩阵中的最大值。 返回生成的矩阵。参考：https:&#x2F;&#x2F;leetcode.cn&#x2F;problems&#x2F;larges">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-02-16T08:55:09.000Z">
-<meta property="article:modified_time" content="2023-02-18T14:38:38.103Z">
+<meta property="og:image" content="https://showmercy7.github.io/.io//03/01/leetcode-problems/largest-local-values-in-a-matrix/ex1.png">
+<meta property="article:published_time" content="2023-03-01T13:56:45.000Z">
+<meta property="article:modified_time" content="2023-03-01T13:57:38.938Z">
 <meta property="article:author" content="John Doe">
-<meta property="article:tag" content="Golang">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://showmercy7.github.io/.io//03/01/leetcode-problems/largest-local-values-in-a-matrix/ex1.png">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://example.com/2023/02/16/Golang%E5%AD%A6%E4%B9%A0/index.html">
+  <link rel="canonical" href="https://showmercy7.github.io/2023/03/01/leetcode-problems/largest-local-values-in-a-matrix/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -44,6 +45,8 @@
   
   
   
+  
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.css">
   
 <meta name="generator" content="Hexo 6.3.0"></head>
 
@@ -59,7 +62,7 @@
           <img class="img-circle img-rotate" src="/images/avatar.jpg" width="200" height="200">
         </a>
         <h2 id="name" class="hidden-xs hidden-sm">showmercy</h2>
-        <h3 id="title" class="hidden-xs hidden-sm hidden-md">码农</h3>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md"></h3>
         <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Changsha, China</small>
       </div>
       
@@ -179,7 +182,7 @@
   <div class="widget">
     <h3 class="widget-title">分类</h3>
     <div class="widget-body">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Golang/">Golang</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Go语言学习笔记</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/">每日一题</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -189,7 +192,7 @@
   <div class="widget">
     <h3 class="widget-title">标签</h3>
     <div class="widget-body">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Golang/" rel="tag">Golang</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Go/" rel="tag">Go</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LeetCode/" rel="tag">LeetCode</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -199,7 +202,7 @@
   <div class="widget">
     <h3 class="widget-title">标签云</h3>
     <div class="widget-body tagcloud">
-      <a href="/tags/Golang/" style="font-size: 13px;">Golang</a>
+      <a href="/tags/Go/" style="font-size: 14px;">Go</a> <a href="/tags/LeetCode/" style="font-size: 13px;">LeetCode</a>
     </div>
   </div>
 
@@ -208,7 +211,7 @@
   <div class="widget">
     <h3 class="widget-title">归档</h3>
     <div class="widget-body">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">二月 2023</a><span class="archive-list-count">2</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">三月 2023</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">二月 2023</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -216,45 +219,80 @@
     
       
   <div class="widget">
-    <h3 class="widget-title">最新文章</h3>
+    <h3 class="widget-title">
+      最新文章
+    </h3>
     <div class="widget-body">
       <ul class="recent-post-list list-unstyled no-thumbnail">
         
           <li>
             
-            <div class="item-inner">
-              <p class="item-category">
-                
-              </p>
-              <p class="item-title">
-                <a href="/2023/02/18/hello-world/" class="title">Hello World</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2023-02-18T14:33:24.082Z" itemprop="datePublished">2023-02-18</time>
-              </p>
-            </div>
+                <div class="item-inner">
+                  <p class="item-title">
+                    <a href="/2023/03/01/leetcode-problems/largest-local-values-in-a-matrix/" class="title">
+                      largest-local-values-in-a-matrix
+                    </a>
+                  </p>
+                  <p class="item-date">
+                    <time datetime="2023-03-01T13:56:45.000Z" itemprop="datePublished">
+                      2023-03-01
+                    </time>
+                  </p>
+                </div>
           </li>
           
           <li>
             
-            <div class="item-inner">
-              <p class="item-category">
-                <a class="category-link" href="/categories/Golang/">Golang</a>
-              </p>
-              <p class="item-title">
-                <a href="/2023/02/16/Golang%E5%AD%A6%E4%B9%A0/" class="title">Golang学习</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2023-02-16T08:55:09.000Z" itemprop="datePublished">2023-02-16</time>
-              </p>
-            </div>
+                <div class="item-inner">
+                  <p class="item-title">
+                    <a href="/2023/02/28/leetcode-problems/merge-similar-items/" class="title">
+                      合并相似的物品
+                    </a>
+                  </p>
+                  <p class="item-date">
+                    <time datetime="2023-02-28T06:51:59.000Z" itemprop="datePublished">
+                      2023-02-28
+                    </time>
+                  </p>
+                </div>
+          </li>
+          
+          <li>
+            
+                <div class="item-inner">
+                  <p class="item-title">
+                    <a href="/2023/02/20/hello-world/" class="title">
+                      Hello World
+                    </a>
+                  </p>
+                  <p class="item-date">
+                    <time datetime="2023-02-20T02:59:49.000Z" itemprop="datePublished">
+                      2023-02-20
+                    </time>
+                  </p>
+                </div>
+          </li>
+          
+          <li>
+            
+                <div class="item-inner">
+                  <p class="item-title">
+                    <a href="/2023/02/20/Golang%E5%85%A5%E9%97%A8/01-Basic-Data-Types/" class="title">
+                      GO入门指南：基本结构和基本数据类型
+                    </a>
+                  </p>
+                  <p class="item-date">
+                    <time datetime="2023-02-20T02:59:49.000Z" itemprop="datePublished">
+                      2023-02-20
+                    </time>
+                  </p>
+                </div>
           </li>
           
       </ul>
     </div>
   </div>
   
-
     
   </div>
 </aside>
@@ -263,14 +301,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-Golang学习" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-leetcode-problems/largest-local-values-in-a-matrix" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      Golang学习
+      largest-local-values-in-a-matrix
     </h1>
   
 
@@ -278,32 +316,29 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2023/02/16/Golang%E5%AD%A6%E4%B9%A0/" class="article-date">
-	  <time datetime="2023-02-16T08:55:09.000Z" itemprop="datePublished">2023-02-16</time>
+	<a href="/2023/03/01/leetcode-problems/largest-local-values-in-a-matrix/" class="article-date">
+	  <time datetime="2023-03-01T13:56:45.000Z" itemprop="datePublished">2023-03-01</time>
 	</a>
 </span>
         
-  <span class="article-category">
-    <i class="icon icon-folder"></i>
-    <a class="article-category-link" href="/categories/Golang/">Golang</a>
-  </span>
-
         
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>
-	<a class="article-tag-link-link" href="/tags/Golang/" rel="tag">Golang</a>
-  </span>
-
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2023/02/16/Golang%E5%AD%A6%E4%B9%A0/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2023/03/01/leetcode-problems/largest-local-values-in-a-matrix/#comments" class="article-comment-link">评论</a></span>
         
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <h3 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h3>
+        <p>给你一个大小为<code>n x n</code>的整数矩阵 grid。</p>
+<p>生成一个大小为<code>(n - 2) x (n - 2)</code>的整数矩阵<code>maxLocal</code>，并满足：</p>
+<ul>
+<li><code>maxLocal[i][j]</code>等于<code>grid</code>中以<code>i + 1</code>行和<code>j + 1</code>列为中心的<code>3 x 3</code>矩阵中的<strong>最大值</strong>。</li>
+</ul>
+<p>换句话说，我们希望找出<code>grid</code>中每个<code>3 x 3</code>矩阵中的最大值。</p>
+<p>返回生成的矩阵。<br><img src="/.io//03/01/leetcode-problems/largest-local-values-in-a-matrix/ex1.png"><br>参考：<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/largest-local-values-in-a-matrix/">https://leetcode.cn/problems/largest-local-values-in-a-matrix/</a></p>
+
       
     </div>
     <div class="article-footer">
@@ -312,7 +347,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://example.com/2023/02/16/Golang%E5%AD%A6%E4%B9%A0/" title="Golang学习" target="_blank" rel="external">http://example.com/2023/02/16/Golang学习/</a>
+      <a href="https://showmercy7.github.io/2023/03/01/leetcode-problems/largest-local-values-in-a-matrix/" title="largest-local-values-in-a-matrix" target="_blank" rel="external">https://showmercy7.github.io/2023/03/01/leetcode-problems/largest-local-values-in-a-matrix/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -331,7 +366,7 @@
         </a>
       </div>
       <div class="media-body">
-        <h3 class="media-heading"><a href="https://github.com/showmercy7" target="_blank"><span class="text-dark">showmercy</span><small class="ml-1x">码农</small></a></h3>
+        <h3 class="media-heading"><a href="https://github.com/showmercy7" target="_blank"><span class="text-dark">showmercy</span><small class="ml-1x"></small></a></h3>
         <div>You can do more than you think.</div>
       </div>
     </figure>
@@ -345,7 +380,7 @@
     
   <section id="comments">
   	
-      <div id="vcomments"></div>
+           
     
   </section>
 
@@ -358,10 +393,10 @@
   
   <ul class="pager pull-left">
     
-    <li class="prev">
-      <a href="/2023/02/18/hello-world/" title="Hello World"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
-    </li>
     
+    <li class="next">
+      <a href="/2023/02/28/leetcode-problems/merge-similar-items/" title="合并相似的物品"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
     
     
   </ul>
@@ -444,29 +479,24 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
    
     
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <!-- <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"> -->
+  <script src="//cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script>
   <script type="text/javascript">
-  var GUEST = ['nick', 'mail', 'link'];
-  var meta = 'nick,mail,link';
-  meta = meta.split(',').filter(function(item) {
-    return GUEST.indexOf(item) > -1;
-  });
-  new Valine({
-    el: '#vcomments',
-    verify: false,
-    notify: false,
-    appId: '',
-    appKey: '',
-    placeholder: 'Just go go',
-    avatar: 'mm',
-    meta: meta,
-    pageSize: '10' || 10,
-    visitor: false
-  });
+  var gitalk = new Gitalk({
+    clientID: 'ba2d56e5ee2fdc85a44a',
+    clientSecret: '690eb112fd04afb5bc5e0beb3ca66df31f0a2a96',
+    repo: 'showmercy7.github.io',
+    owner: 'Showmercy7',
+    admin: ['Showmercy7'],
+    id: md5(location.pathname),
+    distractionFreeMode: true,
+    language: 'zh-CN',
+    enableHotKey: 'true'
+  })
+  gitalk.render('comments')
   </script>
-
-     
+      
 
 
 
